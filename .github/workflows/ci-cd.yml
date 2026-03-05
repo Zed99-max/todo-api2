@@ -31,5 +31,5 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v4
         with:
-          push: true
-          tags: ghcr.io/${{ github.repository_owner }}/todo-api:latest
+          push: truetags: ghcr.io/${{ github.repository_owner | lower }}/todo-api:latest
+          
